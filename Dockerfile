@@ -6,7 +6,7 @@ RUN conda install -y scikit-learn pandas flake8 yapf isort yacs future libgcc
 
 RUN pip install --upgrade pip && python -m pip install --upgrade setuptools && \
     pip install opencv-python tb-nightly matplotlib logger_tt tabulate tqdm wheel mccabe scipy
-RUN conda install easydict             
+RUN pip install easydict             
 RUN conda install termcolor
 
 COPY ./fonts/* /opt/conda/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/
